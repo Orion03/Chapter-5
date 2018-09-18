@@ -20,6 +20,21 @@ public class ageGame {
 			result = "Your a child! Go away!";
 		}
 		
+		else if (usersAge >= 13 && usersAge <= 18)
+		{
+			result = "You are a snotty teen!";
+		}
+		
+		else if (usersAge >= 19 && usersAge <= 25)
+		{
+			result = "Get a job!";
+		}
+		
+		else if (usersAge >= 26 && usersAge <= 40)
+		{
+			result = ""
+		}
+		
 	}
 	
 	public static void displayMessage(int result)
