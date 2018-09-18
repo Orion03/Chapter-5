@@ -32,8 +32,12 @@ public class doorGame {
 			result = "Death.";
 		}
 		
-		else
+		else 
+		{
 			result = "Nothing, you insolent fool.";
+		}
+		
+		displayMessage(result);
 	}
 	
 	public static void displayMessage(String result) {
