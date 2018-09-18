@@ -19,16 +19,19 @@ public class doorGame {
 		
 		if (doorChoice == 1) 
 		{
-			result = "Pile of gold";
+			result = "Pile of gold.";
 		}
 		
 		else if(doorChoice == 2) {
-			result = "Donkey.";
+			result = "Pile of gold and a singular chicken nugget.";
 		}
 		
 		else if(doorChoice == 3) {
-			result = "Barely compitent cashier, and your third in line.";
+			result = "Death.";
 		}
+		
+		displayMessage(result);
+		
 	}
 	
 	public static void displayMessage(String result) {
