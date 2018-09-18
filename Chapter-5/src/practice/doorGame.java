@@ -29,9 +29,6 @@ public class doorGame {
 		else if(doorChoice == 3) {
 			result = "Death.";
 		}
-		
-		displayMessage(result);
-		
 	}
 	
 	public static void displayMessage(String result) {
