@@ -22,13 +22,18 @@ public class doorGame {
 			result = "Pile of gold.";
 		}
 		
-		else if(doorChoice == 2) {
+		else if(doorChoice == 2) 
+		{
 			result = "Pile of gold and a singular chicken nugget.";
 		}
 		
-		else if(doorChoice == 3) {
+		else if(doorChoice == 3) 
+		{
 			result = "Death.";
 		}
+		
+		else
+			result = "Nothing, you insolent fool.";
 	}
 	
 	public static void displayMessage(String result) {
