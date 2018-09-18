@@ -1,10 +1,14 @@
 package practice;
 
+import java.util.Scanner;
+
 public class doorGame {
 
 	public static void main(String[] args) {
 		
 		int doorChoice;
+		
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Welcome to the amazing door choice game!");
 		System.out.println("Your host Steve Harvey");
