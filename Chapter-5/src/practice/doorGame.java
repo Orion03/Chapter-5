@@ -7,6 +7,7 @@ public class doorGame {
 	public static void main(String[] args) {
 		
 		int doorChoice;
+		int chestChoice;
 		String result;
 		
 		Scanner input = new Scanner(System.in);
@@ -19,7 +20,19 @@ public class doorGame {
 		
 		if (doorChoice == 1) 
 		{
-			result = "Pile of gold.";
+			System.out.println("Door 1 good choice choose among the following chests.");
+			System.out.println("1- For chest one\n2- For chest two");
+			chestChoice = input.nextInt();
+			if (chestChoice == 1) {
+				result = "Pile of gold.";
+			}
+			
+			else if (chestChoice == 2) {
+				result = "... nothing. A fool you are, for thy has picked the chest of hollow reward.";
+			}
+			
+			else
+				result = "You absolute madman.";
 		}
 		
 		else if(doorChoice == 2) 
