@@ -8,7 +8,9 @@ public class doorGame {
 		
 		int doorChoice;
 		int chestChoice;
-		String result;
+		int bookChoice;
+		
+		String result = null;
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -45,6 +47,28 @@ public class doorGame {
 		else if(doorChoice == 3) 
 		{
 			result = "Death.";
+		}
+		
+		else if(doorChoice == 10)
+		{
+			System.out.println("Congratulations, you managed to find a secret.");
+			System.out.println("There are three books on a table, labeled with numbers. Which do you choose? 1, 2, or 3?");
+			bookChoice = input.nextInt();
+			if(bookChoice == 1)
+			{
+				result = "This book kills you upon the second you gaze your eyes on it. You died.";
+			}
+			
+			else if(bookChoice == 2)
+			{
+				result = "It's a cook book. Make something or suffer.";
+			}
+			
+			else if(bookChoice == 3)
+			{
+				result = "It's a quantum physics book. And inside is a joke book. Inside the joke book is another quantum physics book. Inside"
+						+ " \nthat book, however, is a joke book. And yet, another quantum physics book lays inside. You decide to close the book.";
+			}
 		}
 		
 		else 
