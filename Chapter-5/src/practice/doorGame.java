@@ -69,6 +69,12 @@ public class doorGame {
 				result = "It's a quantum physics book. And inside is a joke book. Inside the joke book is another quantum physics book. Inside"
 						+ " \nthat book, however, is a joke book. And yet, another quantum physics book lays inside. You decide to close the book.";
 			}
+			
+			else
+			{
+				result = "You picked up the invisible book. Legends say the text on it reads the greatest spaghetti recipe of all time. "
+						+ "/nGood thing you can't see it.";
+			}
 		}
 		
 		else 
