@@ -56,12 +56,12 @@ public class doorGame {
 			bookChoice = input.nextInt();
 			if(bookChoice == 1)
 			{
-				result = "This book kills you upon the second you gaze your eyes on it. You died.";
+				result = "The book that kills you upon the second you gaze your eyes on it. You died.";
 			}
 			
 			else if(bookChoice == 2)
 			{
-				result = "It's a cook book. Make something or suffer.";
+				result = "A cook book. Make something or suffer.";
 			}
 			
 			else if(bookChoice == 3)
@@ -72,7 +72,7 @@ public class doorGame {
 			
 			else
 			{
-				result = "You picked up the invisible book. Legends say the text on it reads the greatest spaghetti recipe of all time. "
+				result = "The invisible book. Legends say the text on it reads the greatest spaghetti recipe of all time. "
 						+ "Good thing you can't see it.";
 			}
 		}
