@@ -73,7 +73,7 @@ public class doorGame {
 			else
 			{
 				result = "You picked up the invisible book. Legends say the text on it reads the greatest spaghetti recipe of all time. "
-						+ "/nGood thing you can't see it.";
+						+ "Good thing you can't see it.";
 			}
 		}
 		
