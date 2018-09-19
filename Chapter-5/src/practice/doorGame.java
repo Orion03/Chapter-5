@@ -32,7 +32,9 @@ public class doorGame {
 			}
 			
 			else
+			{
 				result = "You absolute madman.";
+			}
 		}
 		
 		else if(doorChoice == 2) 
