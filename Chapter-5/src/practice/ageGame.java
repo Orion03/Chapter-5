@@ -8,7 +8,7 @@ public class ageGame {
 	{
 		
 		int usersAge;
-		String result;
+		String result = null;
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -72,12 +72,14 @@ public class ageGame {
 		
 		else if (usersAge >1001)
 		{
-			result = 
+			result = "                             I͒ͭ͐̓ͣ͆ͯ̄̾̈̄̃̾̇̓͏̸̧̱̣͎̦̖̟̜̭͇̻̳͙͎͓̼m̜̣̥̩̞̠͉̲̈̽̄͛ͭͦ͆̄ͫ̑ͬ͜͜͠mo̶̢̺̣̫̪͕͇̖͓͉̞̠͎̝̘̯̥̦̫̬̍͌͑̈́́͢ŗ̶̘̪̥̹̞̘͙͍͍͔͗̾̋́̚t̷̡̘̻͖̗͙̺̫͇̲͊̇̽͆̐ͮ̍͌ͨ̅̇͆̚͘͝ͅą̧̩̬̥̣̳̜̹̩̳͓̟͓̤̙̹̺̰ͯ͌͗ͤ̀̓̍̂͑̇ͯ̽͗͞ḽ̵̥̟̫͕̖̹̜̙̯͚̟̝̰͓̩̬̙̗̌̎́͑͒͜͝";
 		}
+		
+		displayMessage(result);
 		
 	}
 	
-	public static void displayMessage(int result)
+	public static void displayMessage(String result)
 	{
 		System.out.println(result);
 	}
