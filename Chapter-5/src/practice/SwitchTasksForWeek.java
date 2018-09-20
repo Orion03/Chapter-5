@@ -1,9 +1,6 @@
 package practice;
 
-/**
- * @author brosius
- * this is the example that I will give in class 
- */
+
 import java.util.Scanner;
 public class SwitchTasksForWeek {
 
@@ -17,8 +14,7 @@ public class SwitchTasksForWeek {
         switch(day)
         {
             case "Monday":
-                System.out.print("Reserve room for Friday meeting");
-                break;
+            	
             case "Tuesday":
                 System.out.print("Prepare Powerpoint slides.");
                 break;
@@ -26,8 +22,7 @@ public class SwitchTasksForWeek {
                 System.out.print("Remember D&D Thursday night call to confirm.");
                 break;
             case "Thursday":
-                System.out.print("Order snacks for delivery.");
-                break;
+            	
             case "Friday":  
                 System.out.print("Meeting at 10 am.");
                 break;
