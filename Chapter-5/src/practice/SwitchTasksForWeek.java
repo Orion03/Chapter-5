@@ -14,7 +14,6 @@ public class SwitchTasksForWeek {
         switch(day)
         {
             case "Monday":
-            	
             case "Tuesday":
                 System.out.print("Prepare Powerpoint slides.");
                 break;
@@ -22,7 +21,6 @@ public class SwitchTasksForWeek {
                 System.out.print("Remember D&D Thursday night call to confirm.");
                 break;
             case "Thursday":
-            	
             case "Friday":  
                 System.out.print("Meeting at 10 am.");
                 break;
