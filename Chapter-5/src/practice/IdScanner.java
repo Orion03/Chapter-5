@@ -19,6 +19,10 @@ public class IdScanner {
 		case 274904:
 			result = "John Brosius";
 			break;
+		case 316338:
+			result = "Logan DeWilfond";
+			break;
+		
 		}
 	}
 
