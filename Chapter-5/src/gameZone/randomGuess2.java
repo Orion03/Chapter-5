@@ -41,7 +41,7 @@ public class randomGuess2 {
 			System.out.println("Do you want to quit? 1 for yes \n2 for no");
 			quit = input.nextInt();
 			
-		}while(1 != quit);
+		}while(1 != quit || userGuess == computerSecret);
 	}
 	
 	public static void displayMessage(String result)
