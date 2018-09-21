@@ -37,8 +37,7 @@ public class AscendingAndDescending {
 			{
 				//num3 as the second number
 				//num2 as the third number
-				medium = num3;
-				high = num2;
+				result = num1 + " " + num3 + " " + num2;
 			}
 		}
 		
