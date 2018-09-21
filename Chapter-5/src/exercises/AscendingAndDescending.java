@@ -10,7 +10,7 @@ public class AscendingAndDescending {
 		int num2;
 		int num3;
 		
-		String result;
+		String result = null;
 		
 		Scanner input = new Scanner(System.in);
 		
