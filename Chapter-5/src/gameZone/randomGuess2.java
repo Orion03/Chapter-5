@@ -9,25 +9,39 @@ public class randomGuess2 {
 		
 		int userGuess;
 		int computerSecret;
+		int quit;
 		
-		String result;
+		String result = null;
 		
 		computerSecret = (int )(Math.random() * 10 + 1);
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
-		userGuess = input.nextInt();
+		do {
 		
-		if(userGuess == computerSecret)
-		{
-			result = "You win!";
-		}
+			System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
+			userGuess = input.nextInt();
 		
-		else
-		{
-			result = "You lose, computers number was " + computerSecret;
-		}
+			if(userGuess < computerSecret)
+			{
+				result = "This is higher";
+			}
 		
+			else if(userGuess > computerSecret)
+			{
+				result = "The number is lower";
+			}
+		
+			else if(userGuess == computerSecret)
+			{
+				result = "You win!";
+			}
+		
+			displayMessage(result);
+			
+			System.out.println("Do you want to quit? 1 for yes \n2 for no");
+			quit = input.nextInt();
+			
+		}while(1 != quit);
 	}
 	
 	public static void displayMessage(String result)
