@@ -12,8 +12,8 @@ public class randomGuess2 {
 		
 		String result;
 		
-		Scanner input = new Scanner(System.in);
 		computerSecret = (int )(Math.random() * 10 + 1);
+		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
 		userGuess = input.nextInt();
