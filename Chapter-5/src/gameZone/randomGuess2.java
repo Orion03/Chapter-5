@@ -18,8 +18,21 @@ public class randomGuess2 {
 		System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
 		userGuess = input.nextInt();
 		
+		if(userGuess == computerSecret)
+		{
+			result = "You win!";
+		}
 		
+		else
+		{
+			result = "You lose, computers number was " + computerSecret;
+		}
 		
+	}
+	
+	public static void displayMessage(String result)
+	{
+		System.out.println(result);
 	}
 
 }
