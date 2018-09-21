@@ -11,7 +11,7 @@ public class CondoSale {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Which condo would you like? \n1 for park view \n2 for golf course view \n3 for lake view");
+		System.out.println("Which condo would you like to view? \n1 for park view \n2 for golf course view \n3 for lake view");
 		userPick = input.nextInt();
 		
 		if(userPick == 1)
