@@ -1,6 +1,6 @@
 package gameZone;
 
-java.util.Scanner;
+import java.util.Scanner;
 
 public class randomGuess2 {
 
@@ -13,6 +13,10 @@ public class randomGuess2 {
 		String result;
 		
 		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
+		
+		
 		
 	}
 
