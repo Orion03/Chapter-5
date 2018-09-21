@@ -15,6 +15,7 @@ public class randomGuess2 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Pick a number, any number as long it's no higher than 10! >> ");
+		userGuess = input.nextInt();
 		
 		
 		
