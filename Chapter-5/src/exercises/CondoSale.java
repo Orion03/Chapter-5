@@ -16,17 +16,18 @@ public class CondoSale {
 		
 		if(userPick == 1)
 		{
-			result = "Price: $150,000";
+			System.out.println("Would you like garage?");
+			
 		}
 		
 		else if(userPick == 2)
 		{
-			result = "Price: $170,000";
+			System.out.println("Would you like a garage?");
 		}
 		
 		else if (userPick == 3)
 		{
-			result = "Price: $210,000";
+			System.out.println("Would you like a garage?");
 		}
 		
 		else
