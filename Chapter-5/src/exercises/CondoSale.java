@@ -7,7 +7,7 @@ public class CondoSale {
 	public static void main(String[] args) {
 		
 		int userPick;
-		String result;
+		String result = null;
 		
 		Scanner input = new Scanner(System.in);
 		
