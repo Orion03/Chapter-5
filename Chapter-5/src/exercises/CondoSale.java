@@ -7,7 +7,8 @@ public class CondoSale {
 	public static void main(String[] args) {
 		
 		int userPick;
-		String result;
+		int userPick2;
+		String result = null;
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -17,13 +18,14 @@ public class CondoSale {
 		if(userPick == 1)
 		{
 			System.out.println("Would you like garage? \n1 - yes \n2- no");
+			userPick2 = input.nextInt();
 			
-			if(userPick == 1)
+			if(userPick2 == 1)
 			{
 				result = "$155,000";
 			}
 			
-			else if(userPick == 2)
+			else if(userPick2 == 2)
 			{
 				result = "150,000";
 			}
@@ -33,13 +35,14 @@ public class CondoSale {
 		else if(userPick == 2)
 		{
 			System.out.println("Would you like a garage?");
+			userPick2 = input.nextInt();
 			
-			if(userPick == 1)
+			if(userPick2 == 1)
 			{
 				result = "$175,000";
 			}
 			
-			else if(userPick == 2)
+			else if(userPick2 == 2)
 			{
 				result = "$170,000";
 			}
@@ -48,10 +51,16 @@ public class CondoSale {
 		else if (userPick == 3)
 		{
 			System.out.println("Would you like a garage?");
+			userPick2 = input.nextInt();
 			
-			if(userPick == 1)
+			if(userPick2 == 1)
 			{
 				result = "$215,000";
+			}
+			
+			else if(userPick2 == 2)
+			{
+				result = "$210,000";
 			}
 		}
 		
