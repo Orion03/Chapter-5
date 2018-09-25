@@ -31,3 +31,4 @@ public class FixDebugFive1
       JOptionPane.showMessageDialog(null,"Bill is " + bill);
 
 }
+}
