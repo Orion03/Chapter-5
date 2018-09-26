@@ -26,6 +26,8 @@ public class Pay {
 		double overtimePay = (overtimeHours * skillLevel) * 1.5;
 		
 		int userPick;
+		int userPick2;
+		
 		double totalIncome = skillLevel + overtimePay;
 		
 		if(skillLevel == 2)
@@ -92,7 +94,27 @@ public class Pay {
 							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay + "\nTotal income after deductions: " + 
 							(skillLevel2Pay - 17));
 				}
+				
+				else if(hoursWorked >= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome + "\nTotal income after "
+									+ "deductions: " + (totalIncome - 17));
+				}
 			}
+			
+			else
+			{
+				System.out.println("ERROR: Insufficient pay.");
+			}
+		 }
+		
+		else if(skillLevel == 3)
+		{
+			System.out.println("Would you like to add an insurance plan?");
+			System.out.println("1 - Medical Insurance ($35) \n2 - Dental insurance ($20) \n3 - Long-term disability insurance ($10" +
+					"\n4 - No insurance plan.");
+			userPick2 = input.nextInt();
 		}
 	}
 
