@@ -50,7 +50,7 @@ public class Pay {
 				else if(hoursWorked >= 40)
 				{
 				System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-						"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2 + );
+						"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2);
 				}
 			}
 			
