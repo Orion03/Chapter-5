@@ -117,6 +117,21 @@ public class Pay {
 			System.out.println("1 - Medical Insurance ($35) \n2 - Dental insurance ($20) \n3 - Long-term disability insurance ($10" +
 					"\n4 - No insurance plan.");
 			userPick2 = input.nextInt();
+			
+			if(userPick2 == 4)
+			{
+				if(hoursWorked <= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay);
+				}
+				
+				else if(hoursWorked <= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome3);
+				}
+			}
 		}
 	}
 
