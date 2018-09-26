@@ -23,8 +23,8 @@ public class Pay {
 		hoursWorked = input.nextInt();
 		
 		int overtimeHours = hoursWorked - 40;
-		double overtimePay2 = (overtimeHours * skillLevel2Pay) * 1.5;
-		double overtimePay3 = (overtimeHours * skillLevel3Pay) * 1.5;
+		double overtimePay2 = (overtimeHours * (skillLevel2Pay * 40)) * 1.5;
+		double overtimePay3 = (overtimeHours * (skillLevel3Pay * 40)) * 1.5;
 		
 		int userPick;
 		int userPick2;
@@ -44,7 +44,7 @@ public class Pay {
 				if(hoursWorked <= 40)
 				{
 				    System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-						"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay);
+						"\nOvertime hours worked: 0" + "\nTotal income: " + (skillLevel2Pay * hoursWorked));
 				}
 				
 				else if(hoursWorked >= 40)
@@ -59,7 +59,8 @@ public class Pay {
 				if(hoursWorked <= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay + "\nTotal income after deductions: " + 
+							"\nOvertime hours worked: 0" + "\nTotal income: " + (skillLevel2Pay * hoursWorked) + 
+							"\nTotal income after deductions: " + 
 							(skillLevel2Pay - 10));
 				}
 				
@@ -76,8 +77,9 @@ public class Pay {
 				if(hoursWorked <= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay + "\nTotal income after deductions: " + 
-							(skillLevel2Pay - 20));
+							"\nOvertime hours worked: 0" + "\nTotal income: " + (skillLevel2Pay * hoursWorked) + 
+							"\nTotal income after deductions: " + 
+							((skillLevel2Pay * hoursWorked) - 20));
 				}
 				
 				else if(hoursWorked >= 40)
@@ -93,8 +95,8 @@ public class Pay {
 				if(hoursWorked <= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay + "\nTotal income after deductions: " + 
-							(skillLevel2Pay - 17));
+							"\nOvertime hours worked: 0" + "\nTotal income: " + (skillLevel2Pay * hoursWorked) + "\nTotal income after deductions: " + 
+							((skillLevel2Pay * hoursWorked) - 17));
 				}
 				
 				else if(hoursWorked >= 40)
@@ -123,13 +125,47 @@ public class Pay {
 				if(hoursWorked <= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
-							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel2Pay);
+							"\nOvertime hours worked: 0" + "\nTotal income: " + (skillLevel3Pay * hoursWorked));
 				}
 				
 				else if(hoursWorked <= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
 							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome3);
+				}
+			}
+			
+			else if(userPick2 == 3)
+			{
+				if(hoursWorked <= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel3Pay + "\nTotal income afer deductions: " + 
+							(skillLevel3Pay - 10));
+				}
+				
+				else if(hoursWorked >= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome3 + "\nTotal income after "
+									+ "deductions: " + (totalIncome3 - 10));
+				}
+			}
+			
+			else if(userPick2 == 2)
+			{
+				if(hoursWorked <= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: 0" + "\nTotal income: " + skillLevel3Pay + "\nTotal income after deductions: " +
+							(skillLevel3Pay - 10));
+				}
+				
+				else if(hoursWorked >= 40)
+				{
+					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel3Pay + 
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome3 + "\nTotal income after "
+									+ "deductions: " + (totalIncome3 - 10));
 				}
 			}
 		}
