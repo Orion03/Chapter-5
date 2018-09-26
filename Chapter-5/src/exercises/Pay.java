@@ -23,12 +23,14 @@ public class Pay {
 		hoursWorked = input.nextInt();
 		
 		int overtimeHours = hoursWorked - 40;
-		double overtimePay = (overtimeHours * skillLevel) * 1.5;
+		double overtimePay2 = (overtimeHours * skillLevel2Pay) * 1.5;
+		double overtimePay3 = (overtimeHours * skillLevel3Pay) * 1.5;
 		
 		int userPick;
 		int userPick2;
 		
-		double totalIncome = skillLevel + overtimePay;
+		double totalIncome2 = skillLevel2Pay + overtimePay2;
+		double totalIncome3 = skillLevel3Pay + overtimePay3;
 		
 		if(skillLevel == 2)
 		{
@@ -48,7 +50,7 @@ public class Pay {
 				else if(hoursWorked >= 40)
 				{
 				System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-						"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome);
+						"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2 + );
 				}
 			}
 			
@@ -64,8 +66,8 @@ public class Pay {
 				else if(hoursWorked >= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome + "\nTotal income after "
-									+ "deductions: " + (totalIncome - 10));
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2 + "\nTotal income after "
+									+ "deductions: " + (totalIncome2 - 10));
 				}
 			}
 			
@@ -81,8 +83,8 @@ public class Pay {
 				else if(hoursWorked >= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome + "\nTotal income after "
-									+ "deductions: " + (totalIncome - 20));
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2 + "\nTotal income after "
+									+ "deductions: " + (totalIncome2 - 20));
 				}
 			}
 			
@@ -98,8 +100,8 @@ public class Pay {
 				else if(hoursWorked >= 40)
 				{
 					System.out.println("Hours worked: " + hoursWorked + "\nHourly pay rate: " + skillLevel2Pay + 
-							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome + "\nTotal income after "
-									+ "deductions: " + (totalIncome - 17));
+							"\nOvertime hours worked: " + overtimeHours + "\nTotal income: " + totalIncome2 + "\nTotal income after "
+									+ "deductions: " + (totalIncome2 - 17));
 				}
 			}
 			
